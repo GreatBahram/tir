@@ -18,4 +18,4 @@ class TagNotFound(Exception):
                 text += 'which should contain {!r}'.format(value[0])
             else:
                 text += '{!r}'.format(value)
-        Exception.__init__(self, text)
+        super().__init__(self, text)
